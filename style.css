@@ -1,0 +1,439 @@
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    width: 100px;
+    margin: 10px 0 0 10px;
+}
+
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 10%;
+}
+
+#nav-links li {
+    margin-top: 18px;
+    padding-right: 45px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.homeburger-icon {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+#button-home {
+    color: #ffffff;
+    background-color: #f0390f;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top_icon-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-left: 6%;
+    padding-bottom: 14%;
+}
+
+.top_icon-wrapper h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+}
+
+.banner_icon-wrapper {
+    width: 55%;
+    position: relative;
+}
+
+.banner_icon-wrapper img {
+    width: 90%;
+    height: auto;
+}
+
+/* Skating Class Section */
+.skating-class {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #fff;
+    position: relative;
+}
+
+.skating-class h2 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.skating-class p {
+    color: black;
+    margin: 10px 0 40px 0;
+}
+
+.card span{
+    position: absolute;
+    top:100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+
+#span1{
+    left: 5%;
+}
+
+#span2{
+    left: 38%;
+}
+
+#span3{
+    left: 72%;
+}
+
+.class-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.class-cards .card {
+    background-color: #f0390f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    width: 23.5%;
+}
+
+.class-cards .card:nth-child(even){
+    background-color: #3e0bce;
+}
+
+.class-cards .card h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.class-cards .card p {
+    color:white;
+    font-size: 17.5px;
+    font-weight: 200;
+    margin: 25px 0;
+}
+
+.class-cards .card img{
+    padding-left: 35%;
+    margin-top: 10px;
+}
+
+.about_background-container{
+    margin-top: 50px;
+    background-image: url(about_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.about-container{
+    display: flex;
+}
+
+.about_text-wrapper{
+    width: 50%;
+    color: #fff;
+    padding-top: 12%;
+    padding-left: 12%;
+}
+
+.about_text-wrapper h1{
+    font-size: 2.5rem;
+}
+
+.about_text-wrapper p{
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.about_image-wrapper{
+    width: 50%;
+}
+
+.about_image-wrapper img{
+    padding-top: 9%;
+    height: 100%;
+}
+
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 575.98px) {
+    /* For homeburger Menu */
+    .logo {
+        align-self: flex-start;
+        width: 100px;
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    #nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    #nav-links li {
+        padding-right: 0;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .homeburger-icon {
+        display: block; 
+        font-size: 24px;
+        color: #000;
+    }
+    
+    .top_icon-wrapper h1 {
+        font-size: 1.5rem;
+    }
+
+    .top_icon-wrapper {
+        padding-left: 6%;
+        padding-bottom: 4%;
+    }
+
+    /* banner-icon */
+    .banner_icon-wrapper img {
+        margin-left: 20px;
+        width: 95%;
+    }
+
+    /* Skating Class Section */
+    .skating-class {
+        padding: 0px 0;
+    }
+
+    .skating-class h2 {
+        font-size: 2.2rem;
+    }
+
+    .skating-class p{
+        font-size: 12px;
+    }
+
+    #span1{
+        top: 36%;
+        left: 0%;
+    }
+    
+    #span2{
+        top: 66%;
+        left: 0%;
+    }
+    
+    #span3{
+        top: 96%;
+        left: 0%;
+    }
+    
+
+    .class-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .class-cards .card {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    /* About Section */
+
+    .about_background-container{
+        margin-top: 0px;
+    }
+
+    .about-container{
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about_text-wrapper h1{
+        font-size: 1.5rem;
+    }
+    
+    .about_text-wrapper p{
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .about_text-wrapper{
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+
+}
+
+/* Extra small devices (phones, landscape) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #nav-links li {
+        margin-top: 18px;
+        padding-right: 25px;
+    }
+
+    #nav-links {
+        display: flex; 
+    }
+
+    .top_icon-wrapper h1 {
+        font-size: 1.8rem;
+    }
+
+    .top_icon-wrapper {
+        padding-left: 6%;
+        padding-bottom: 7.5%;
+    }
+
+    /* banner-icon */
+    .banner_icon-wrapper img {
+        margin-left: 20px;
+        width: 95%;
+    }
+
+    /* Skating Class Section */
+    .skating-class {
+        padding: 0px 0;
+    }
+
+    .skating-class h2 {
+        font-size: 2.2rem;
+    }
+
+    .skating-class p{
+        font-size: 12px;
+    }
+
+    #span1{
+        top: 36%;
+        left: 0%;
+    }
+    
+    #span2{
+        top: 66%;
+        left: 0%;
+    }
+    
+    #span3{
+        top: 96%;
+        left: 0%;
+    }
+    
+
+    .class-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .class-cards .card {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    /* About Section */
+
+    .about_background-container{
+        margin-top: 0px;
+    }
+
+    .about-container{
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about_text-wrapper h1{
+        font-size: 1.5rem;
+    }
+    
+    .about_text-wrapper p{
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .about_text-wrapper{
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+
+}
+
+/* Larger devices (desktops) */
+@media (min-width: 768px) and (max-width:1198px)  {
+    #nav-links {
+        display: flex; 
+    }
+
+    .homeburger-icon {
+        display: none; 
+    }
+
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+    #nav-links {
+        padding-right: 20%;
+    }
+
+    #nav-links {
+        display: flex; 
+    }
+}
+
+

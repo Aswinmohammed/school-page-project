@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="logo.png" alt="logo-image">
+            <ul id="nav-links" style="display: none;">
+                <li><a id="button-home" href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact US</a></li>
+            </ul>
+        </nav>
+        <div class="homeburger-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    </header> 
+    <main>
+        <section class="main-container">
+            <div class="top_icon-wrapper">
+                <img src="top_icon.png" alt="top-icon">
+                <h1>Skating <br> Board <br> School</h1>
+            </div>
+                   
+            <div class="banner_icon-wrapper">
+                <img src="banner_img.png" alt="banner_img">
+            </div>
+        </section>
+        <section class="skating-class">
+            <h2>Our Skating Class</h2>
+            <p>There are many variations of passages of Lorem Ipsum</p>
+            <div class="class-cards">
+                <div class="card">
+                    <img src="class1.png" alt="Skateboard">
+                    <h3>Skateboard</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations</p>
+                    <span id="span1">Read More</span>  
+                </div>
+                <div class="card">
+                    <img src="class2.png" alt="Skateboard">
+                    <h3>Skateboard</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations</p>
+                    <span id="span2">Read More</span> 
+                </div>
+                <div class="card">
+                    <img src="class3.png" alt="Skateboard">
+                    <h3>Skateboard</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations</p>
+                    <span id="span3">Read More</span> 
+                </div>
+            </div>
+        </section>
+        <section class="about_background-container">
+            <div class="about-container" >
+                <div class="about_text-wrapper">
+                    <h1>About<br>Skating<br> School</h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration. There are many variations of passages of Lorem Ipsum available, but There are many variations There are many variations  </p>
+                </div>
+                <div class="about_image-wrapper">
+                    <img src="about.png" alt="about-icon">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'flex' || navLinks.style.display === '') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
+

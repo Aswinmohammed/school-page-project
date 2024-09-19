@@ -3,6 +3,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* nav Section */
 .logo {
     width: 100px;
     margin: 10px 0 0 10px;
@@ -48,6 +49,8 @@ body {
     padding: 8px 20px;
     border-radius: 30px;
 }
+
+/* main Section */
 
 .main-container {
     display: flex;
@@ -111,7 +114,7 @@ body {
 }
 
 #span1{
-    left: 5%;
+    left: 10%;
 }
 
 #span2{
@@ -119,12 +122,13 @@ body {
 }
 
 #span3{
-    left: 72%;
+    left: 65%;
 }
 
 .class-cards {
     display: flex;
     justify-content: space-around;
+    margin:0px 100px;
 }
 
 .class-cards .card {
@@ -133,7 +137,7 @@ body {
     border-radius: 10px;
     text-align: center;
     color: #fff;
-    width: 23.5%;
+    width: 30%;
 }
 
 .class-cards .card:nth-child(even){
@@ -147,7 +151,7 @@ body {
 
 .class-cards .card p {
     color:white;
-    font-size: 17.5px;
+    font-size: 15px;
     font-weight: 200;
     margin: 25px 0;
 }
@@ -231,7 +235,7 @@ body {
     .top_icon-wrapper h1 {
         font-size: 1.5rem;
     }
-
+    
     .top_icon-wrapper {
         padding-left: 6%;
         padding-bottom: 4%;
@@ -250,6 +254,7 @@ body {
 
     .skating-class h2 {
         font-size: 2.2rem;
+        margin-top: 20px;
     }
 
     .skating-class p{
@@ -278,6 +283,7 @@ body {
         align-items: center;
         justify-content: space-around;
         margin-bottom: 20px;
+        margin:0px 0px;
     }
 
     .class-cards .card {
@@ -376,6 +382,7 @@ body {
         align-items: center;
         justify-content: space-around;
         margin-bottom: 20px;
+        margin:0px 0px;
     }
 
     .class-cards .card {
